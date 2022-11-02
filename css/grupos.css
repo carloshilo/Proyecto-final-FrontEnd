@@ -1,0 +1,68 @@
+:root {
+    --negro: #333;
+    --claro: #cdaa7c;
+    --sombra: 0 .5rem 1.5rem rgba(0, 0, 0, .1);
+}
+
+.accordion {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    /*padding: 12rem 9%;*/
+}
+
+.accordion .contenidoBox {
+    position: relative;
+    margin: 1.5rem;
+}
+
+.accordion .contenidoBox .label {
+    position: relative;
+    padding: 1.5rem;
+    background: var(--negro);
+    color: var(--claro);
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.accordion .contenidoBox .label::before {
+    content: '+';
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    font-size: 1.5em;
+}
+
+.accordion .contenidoBox.active .label::before {
+    content: '-';
+}
+
+.accordion .contenidoBox .contenido {
+    position: relative;
+    background: #fff;
+    color: var(--negro);
+    height: 0;
+    overflow: hidden;
+    transition: 0.5%;
+    overflow-y: auto;
+    font-size: 1.5em;
+}
+
+.accordion .contenidoBox.active .contenido {
+    height: 150px;
+}
+
+.accordion .contenidoBox img {
+    padding: 10px;
+    margin: 10px;
+    float: right;
+    width: 250px;
+}
+.accordion .contenidoBox p {
+    padding: 10px;
+    margin: 10px;
+}
+.accordion .contenidoBox a {
+    background-color: var(--negro);
+}

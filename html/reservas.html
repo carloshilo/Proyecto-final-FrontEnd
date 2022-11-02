@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurante Soa de Muse</title>
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <!--///// ARCHIVOS CSS /////-->
+
+    <link rel="stylesheet" type="text/css" href="../css/styles.css">
+    <link rel="stylesheet" type="text/css" href="../css/media.css">
+    <link rel="stylesheet" type="text/css" href="../css/reservas.css">
+</head>
+
+<body>
+
+    <!--///// HEADER /////-->
+    <header>
+        <a href="#" class="logo"><img src="../images/logo.png" alt="Logo"></a>
+
+        <nav class="navbar">
+            <a href="../index.html">Restaurante</a>
+            <a href="carta.html">Carta</a>
+            <a href="especialidades.html">Especialidades</a>
+            <a href="grupos.html">Para grupos</a>
+            <a href="#" class="active">Reservas</a>
+        </nav>
+
+        <div class="iconos">
+            <i class="fas fa-bars" id="carta"></i>
+        </div>
+    </header>
+    <!--///// RESERVAS /////-->
+
+    <div class="reservas" id="reservas">
+        <div class="imagen">
+
+        </div>
+
+        <div class="form">
+            <h1 class="heading">Reservar una mesa</h1>
+            <center>
+                <h3 class="sub-heading">~ echa un vistazo ~ </h3>
+            </center>
+
+            <form>
+                <div class="form-holder">
+                    <div>
+                        <select>
+                            <option>1 persona</option>
+                            <option>2 personas</option>
+                            <option>3 personas</option>
+                            <option>4 personas</option>
+                        </select>
+
+                        <select>
+                            <option>Hora</option>
+                            <option>20:00</option>
+                            <option>21:00</option>
+                            <option>22:00</option>
+                            <option>23:00</option>
+                        </select>
+                        <input type="text" name="" placeholder="Teléfono">
+                    </div>
+
+                    <div>
+                        <input type="text" name="" placeholder="Fecha">
+                        <input type="text" name="" placeholder="Nombre">
+                        <input type="email" name="" placeholder="E-mail">
+                    </div>
+                </div>
+                <center><a href="#" class="btn">Reserva ahora</a></center>
+            </form>
+        </div>
+        <div id="map"> </div>
+    </div>
+
+
+    <!--///// FOOTER /////-->
+    <footer>
+        <div class="container">
+            <div>
+                <h3>SOBRE NOSOTROS</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+            </div>
+
+            <div>
+                <h3>ESTÁTE AL TANTO DE LAS NOTICIAS Y OFERTAS</h3>
+                <input type="email" name="" placeholder="escriba su e-amil">
+                <ul>
+                    <li><a href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a></li>
+                    <li><a href="https://instagram.com/"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="https://whatsapp.com/"><i class="fa-brands fa-whatsapp"></i></a></li>
+                    <li><a href="https://linkedin.com/"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h3>CONTÁCTANOS</h3>
+                <span>Restaurante Soa de Muse</span>
+                <span>C/ Soa de Muse, 54</span>
+                <span>+ (34) 912 345 678</span>
+                <span>soademuserestaurante@gmail.com</span>
+            </div>
+
+            <div>
+                <span><a style="color: #b2b2b2;" href="privacidad.html">Política de Privacidad</a></span><br>
+                <span><a style="color: #b2b2b2;" href="legal.html">Aviso Legal</a></span><br>
+                <span><a style="color: #b2b2b2;" href="cookies.html">Política de Cookies</a></span>
+            </div>
+        </div>
+        <p>&copy;2022 Derechos resedrvados a Soa de Muse Restaurantes</p>
+    </footer>
+    <!--///// SCRIPTS /////-->
+    <script type="text/javascript" src="../js/main.js"></script>
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA8CHZQEr2MF9l7GszRRyBf2SiiIHBs0Hk&region=ES&language=es&callback=initMap">
+        </script>
+    <script src="../js/mapa.js"></script>
+</body>
+
+</html>

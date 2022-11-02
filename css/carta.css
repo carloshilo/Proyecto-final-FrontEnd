@@ -1,0 +1,53 @@
+.nuestra-carta {
+    background: url(../images/our-menu-bg-1.png) left top no-repeat, url(../images/our-menu-bg-3.jpg);
+
+}
+
+.nuestra-carta .carta-container {
+    padding: 3rem 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(50rem, 2fr));
+    gap: 5rem 10rem;
+}
+
+.nuestra-carta .carta-container .item .item-nombre {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0;
+    margin-top: .5rem;
+}
+
+.nuestra-carta .carta-container .item .carta-item {
+    padding: .5rem 0;
+}
+
+.nuestra-carta .carta-container .item .item-nombre h2 {
+    font-size: 3rem;
+    color: #e5e5e5;
+    font-weight: 300;
+}
+
+.nuestra-carta .carta-container .item .item-carta h3 {
+    font-size: 2rem;
+    color: #e5e5e5;
+    font-weight: 200;
+    display: inline-block;
+}
+
+.nuestra-carta .carta-container .item .item-carta span {
+    width: 37%;
+    display: inline-block;
+    border: 1px dotted #e5e5e5;
+}
+
+.nuestra-carta .carta-container .item .item-carta ul {
+    display: flex;
+    font-size: 1.5rem;
+    list-style: none;
+    padding: .8rem 0;
+    font-weight: 200;
+}
+
+.nuestra-carta .carta-container .item .item-carta ul li {
+    color: #b9b9b9;
+}

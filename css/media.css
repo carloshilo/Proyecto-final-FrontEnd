@@ -1,0 +1,112 @@
+:root {
+    --negro: #333;
+    --claro: #cdaa7c;
+    --sombra: 0 .5rem 1.5rem rgba(0, 0, 0, .1);
+}
+
+@media (max-width: 991px) {
+    html {
+        font-size: 55%;
+    }
+
+    header {
+        padding: 1rem 2rem;
+    }
+
+    header .logo img {
+        height: 7rem;
+    }
+
+    .nuestra-carta .carta-container {
+        grid-template-columns: repeat(auto-fit, minmax(30rem, 2fr));
+    }
+
+    .nuestra-carta .carta-container .item .item-carta span {
+        width: 15%;
+    }
+}
+
+@media (max-width: 768px) {
+
+    /*navbar*/
+    header .logo img {
+        height: 7rem;
+    }
+
+    header .iconos #carta {
+        display: inline-block;
+    }
+
+    header .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: #eee;
+        border-top: .1rem solid rgba(205, 170, 124, 0.2);
+        border-bottom: .1rem solid rgba(205, 170, 124, 0.2);
+        padding: 1rem;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    header .navbar a {
+        display: block;
+    }
+
+    header .navbar.active {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+
+    header .navbar {
+        display: block;
+        padding: 1.5rem;
+        margin: 1rem;
+        font-size: 2rem;
+        background: var(--negro)
+    }
+
+    /*slider*/
+    .restaurante .restaurante-slider .slide {
+        justify-content: center;
+        height: 80vh;
+    }
+
+    .restaurante .restaurante-slider .slide .contenido {
+        padding: 0;
+    }
+
+    .restaurante .restaurante-slider .slide .contenido h1 {
+        font-size: 7rem;
+    }
+
+    /*welcome section*/
+
+    .bienvenida .box-container {
+        flex-wrap: wrap;
+    }
+
+    .bienvenida .box-container .box {
+        width: 100%;
+    }
+
+    .reserva .imagen {
+        width: 0;
+    }
+
+    .reserva .form {
+        width: 100%;
+    }
+
+    .reserva .form .form-holder {
+        display: block;
+    }
+
+    .accordion .contenidoBox img {
+        float: center;
+        width: 150px;
+    }
+
+    .accordion .contenidoBox.active .contenido {
+        height: 220px;
+    }
+}

@@ -1,0 +1,70 @@
+:root {
+    --negro: #333;
+    --claro: #cdaa7c;
+    --sombra: 0 .5rem 1.5rem rgba(0, 0, 0, .1);
+}
+
+.especial
+{
+	width: 100%;
+	display: grid;
+	grid-template-columns: repeat(auto-fit,minmax(30rem,1fr));
+	grid-gap: 1.5rem;
+}
+.especial .item .imagen img 
+{
+	width: 100%;
+}
+.especial .item
+{
+	position: relative;
+	z-index: 2;
+	overflow: hidden;
+}
+.especial .item:before
+{
+	position: absolute;
+	content: '';
+	width: 100%;
+	height: 100%;
+	display: none;
+	top: 0;left: 0;right: 0;bottom: 0;
+	background: rgba(0, 0, 0, .5);
+	z-index: 5;
+}
+.especial .item:hover.item:before
+{
+	display: block;
+}
+.especial .item .especial-info
+{
+	position: absolute;
+	top: 130%;
+	left: 0;right: 0;bottom: 0;
+	display: flex;
+	justify-content: center;
+	z-index: 10;
+	align-items: center;
+	transition: 1s;
+	cursor: pointer;
+	padding: 3rem 0;
+	margin: 3rem;
+}
+.especial .item .especial-info h3
+{
+	font-size: 1.7rem;
+	color: #fff;
+	padding: .8rem 0;
+	text-transform: uppercase;
+}
+.especial .item .especial-info span
+{
+	font-size: 1.7rem;
+	color: var(--claro);
+	letter-spacing: 1px;
+	font-weight: 300;
+}
+.especial .item:hover .especial-info 
+{
+	top: 0;
+}
